@@ -33,14 +33,49 @@
 	  50.01% { opacity: 0; }
 	  100% { opacity: 0; }
     }
+    .rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: orange;}
+  10%{color: purple;}
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
     #grad1 {
-    background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
      </style>
@@ -51,7 +86,7 @@
       <source src="skyrim.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    <p id="grad1" class="blink">
+    <p id="grad1" class="blink rainbow">
   <!--
          /\       /\
         / (       ) \

@@ -41,8 +41,8 @@ h1 {
 	100% { opacity: 0; }
 }
 .nice {
-  width: 1000px;
-  height: 9001px;
+  width: auto;
+  height: auto;
  -webkit-animation: nice 1s infinite; /* Safari 4+ */
   -moz-animation:    nice 1s infinite; /* Fx 5+ */
   -o-animation:      nice 1s infinite; /* Opera 12+ */
